@@ -1,0 +1,162 @@
+/* client/src/styles/MyDocuments.css */
+.documents-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 80px;
+  }
+  
+  .documents-container h1 {
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .documents-tabs {
+    display: flex;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tab {
+    padding: 12px 20px;
+    cursor: pointer;
+    color: #777;
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+  
+  .tab:hover {
+    color: #4285f4;
+  }
+  
+  .tab.active {
+    color: #4285f4;
+    border-bottom: 3px solid #4285f4;
+  }
+  
+  .no-documents {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .no-documents p {
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 1.1rem;
+  }
+  
+  .documents-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .document-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .document-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .document-preview {
+    height: 160px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .preview-placeholder {
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .document-title {
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .document-type {
+    font-size: 0.8rem;
+    color: #777;
+  }
+  
+  .document-info {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .document-name {
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .document-date {
+    font-size: 0.8rem;
+    color: #777;
+  }
+  
+  .document-actions {
+    display: flex;
+    padding: 15px;
+  }
+  
+  .btn-view,
+  .btn-edit,
+  .btn-delete {
+    flex: 1;
+    padding: 8px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-view {
+    background-color: #f1f3f4;
+    color: #333;
+    margin-right: 5px;
+  }
+  
+  .btn-view:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .btn-edit {
+    background-color: #4285f4;
+    color: white;
+    margin: 0 5px;
+  }
+  
+  .btn-edit:hover {
+    background-color: #3367d6;
+  }
+  
+  .btn-delete {
+    background-color: #f44336;
+    color: white;
+    margin-left: 5px;
+  }
+  
+  .btn-delete:hover {
+    background-color: #d32f2f;
+  }
